@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="parent">
+        <div class="form">
+            <h1>Register</h1>
+            <form method='POST'>
+                {% csrf_token %}
+                <label for="username">UserName:</label>
+                <input type="text" placeholder="enter your username" name="username" required><br>
+        
+                <label for="pass">Password:</label>
+                <input type="password" placeholder="enter password" name="pass" minlength="8" pattern="[A-Za-z0-9]+"><br>
+        
+        
+                <label for="fname">First Name:</label>
+                <input type="text" placeholder="enter your first name" name="fname"  pattern="[A-Za-z]+" required><br>
+        
+                <label for="lname">Last Name:</label>
+                <input type="text" placeholder="enter your last name" name="lname"  pattern="[A-Za-z]+" required><br>
+        
+                <label for="dob">DOB:</label>
+                <input type="date" placeholder="enter date of birth" name="dob" ><br>
+        
+                <label for="address1">Address Line 1:</label>
+                <input type="text" placeholder="Address Line 1" name="address1" required><br>
+        
+                <label for="address2">Address Line 2:</label>
+                <input type="text" placeholder="Address Line 2" name="address2" required><br>
+        
+                <label for="postal_code">Postal Code:</label>
+                <input type="number" placeholder="enter postal code" name="postal_code" required><br>
+        
+                <label for="phone_number">Phone Number:</label>
+                <input type="tel" placeholder="enter phone number" name="phone_number" required><br>
+                
+                    <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

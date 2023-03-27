@@ -1,0 +1,41 @@
+body{
+    background-color:beige;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.form{
+
+    width: 600px;
+    height:500px;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin: 6px;
+    padding: 5px;
+    width: 160px;
+    border-radius: 5px;
+    border:1px solid skyblue
+}
+
+button{
+    padding: 10px;
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

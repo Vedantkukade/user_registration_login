@@ -1,0 +1,30 @@
+body{
+    background-color:beige;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+button{
+    padding: 10px;
+    margin: 20px;
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button a{
+    text-decoration: none;
+    color:brown;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10px;
+    flex-direction: column;
+}
